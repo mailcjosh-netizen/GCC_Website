@@ -27,6 +27,9 @@ export default function Timeline() {
           <p className="font-semibold text-slate">{m.year}</p>
           <h3 className="mt-1 font-display text-3xl text-pine sm:text-4xl">{m.title}</h3>
           <p className="mt-3 max-w-prose text-lg leading-relaxed text-ink/80">{m.body}</p>
+          {m.image && (
+            <img src={m.image} alt="" className="mt-6 w-full max-w-xl rounded-lg object-cover sm:max-h-80" />
+          )}
           {m.quote && (
             <blockquote className="mt-5 font-display text-2xl italic text-slate">“{m.quote}”</blockquote>
           )}

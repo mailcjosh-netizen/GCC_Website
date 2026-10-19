@@ -36,7 +36,7 @@ export default function NewHere() {
           </dl>
         </div>
         <div>
-          <img src={placeholders.map} alt="Placeholder for a map of Grace Covenant Church, Laban" className="w-full rounded-lg" />
+          <iframe src={placeholders.mapEmbed} title="Map of Laban, Shillong" loading="lazy" className="aspect-[2/1] w-full rounded-lg border-0" />
           <div className="mt-8 rounded-lg bg-pine p-8 text-mist">
             <h3 className="font-display text-3xl">Can’t make it in person?</h3>
             <p className="mt-2 text-mist/85">Join our Sunday service live on YouTube, or catch up on past sermons.</p>

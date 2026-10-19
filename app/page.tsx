@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            <img src={placeholders.welcomeVideo} alt="Placeholder for the welcome video" className="w-full rounded-lg" />
+            <img src={placeholders.welcomeVideo} alt="Preaching in GCC’s first home at Laban, early 1990s" className="aspect-video w-full rounded-lg object-cover" />
             <span className="absolute inset-0 m-auto flex h-20 w-20 items-center justify-center rounded-full bg-gold text-pine-deep shadow-lg" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" /></svg>
             </span>
@@ -60,14 +60,14 @@ export default function Home() {
           <SectionHead title="Sunday sermon" intro="Catch up on this week’s message, or watch a recent one." more={{ href: "/sermons", label: "All sermons" }} />
           <div className="grid gap-8 lg:grid-cols-3">
             <article className="lg:col-span-2">
-              <img src={latest.image} alt={`Video placeholder: ${latest.title}`} className="w-full rounded-lg" />
+              <img src={latest.image} alt="" className="aspect-video w-full rounded-lg object-cover" />
               <h3 className="mt-4 font-display text-3xl text-pine">{latest.title}</h3>
               <p className="text-slate">{latest.speaker}, {latest.date}</p>
             </article>
             <div className="space-y-8">
               {recent.map((s) => (
                 <article key={s.title}>
-                  <img src={s.image} alt={`Video placeholder: ${s.title}`} className="w-full rounded-lg" />
+                  <img src={s.image} alt="" className="aspect-video w-full rounded-lg object-cover" />
                   <h3 className="mt-3 font-display text-2xl text-pine">{s.title}</h3>
                   <p className="text-sm text-slate">{s.speaker}, {s.date}</p>
                 </article>
@@ -169,7 +169,7 @@ export default function Home() {
       {/* Story teaser */}
       <section className="py-20">
         <Container className="grid items-center gap-12 lg:grid-cols-5">
-          <img src={placeholders.storyTeaser} alt="Placeholder for a photo of the early congregation" className="rounded-lg lg:col-span-2" />
+          <img src={placeholders.storyTeaser} alt="The early GCC church family" className="aspect-[4/5] w-full rounded-lg object-cover lg:col-span-2" />
           <div className="lg:col-span-3">
             <h2 className="font-display text-4xl font-semibold text-pine sm:text-5xl">Birthed in tears, built by God</h2>
             <p className="mt-4 max-w-prose text-lg text-slate">
@@ -192,7 +192,7 @@ export default function Home() {
       {/* Newsletter + subscribe */}
       <section id="subscribe" className="bg-pine py-20 text-mist">
         <Container className="grid items-center gap-12 md:grid-cols-3">
-          <img src={placeholders.newsletterCover} alt="Placeholder for the latest newsletter cover" className="mx-auto w-56 rounded shadow-2xl md:w-full md:max-w-xs" />
+          <img src={placeholders.newsletterCover} alt="Newsletter cover image: the hills around Shillong" className="mx-auto aspect-[3/4] w-56 rounded object-cover shadow-2xl md:w-full md:max-w-xs" />
           <div className="md:col-span-2">
             <h2 className="font-display text-4xl font-semibold sm:text-5xl">The GCC Newsletter</h2>
             <p className="mt-3 max-w-prose text-mist/85">

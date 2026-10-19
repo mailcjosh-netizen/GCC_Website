@@ -2,7 +2,7 @@ import PageHero from "@/components/PageHero";
 import Timeline from "@/components/Timeline";
 import { Container } from "@/components/Section";
 import { visions } from "@/content/history";
-import { ph } from "@/content/placeholders";
+import { glimpses } from "@/content/placeholders";
 
 export const metadata = { title: "Our story" };
 
@@ -21,9 +21,13 @@ export default function OurStory() {
       <section className="bg-white py-16">
         <Container>
           <h2 className="font-display text-4xl text-pine">Glimpses of the early years</h2>
-          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
-            {["Worship in the Laban house", "Early congregation", "Praise and worship", "Bible Week 1992", "Fellowship after service", "Young people serving"].map((l, n) => (
-              <img key={l} src={ph(600, 450, l, n % 2 ? "3E5C76" : "2C5545")} alt={`Placeholder for archive photo: ${l}`} className="w-full rounded-lg" />
+          <p className="mt-2 text-slate">Photographs from the church’s first home in Laban, early 1990s.</p>
+          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+            {glimpses.map((g) => (
+              <figure key={g.src}>
+                <img src={g.src} alt={g.caption} className="aspect-[3/2] w-full rounded-lg object-cover" />
+                <figcaption className="mt-2 text-sm text-slate">{g.caption}</figcaption>
+              </figure>
             ))}
           </div>
         </Container>

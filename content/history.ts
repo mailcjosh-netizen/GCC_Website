@@ -1,5 +1,6 @@
 // Source: "God's Call – Birth of the Grace Covenant Church",
 // Rev. Pyndapborlang Dkhar Dann (2018). TODO: Core Committee approval (Policy §9).
+import { archive } from "./placeholders";
 
 export type Milestone = {
   year: string;
@@ -30,17 +31,20 @@ export const milestones: Milestone[] = [
     year: "19 Aug 1990",
     title: "Three hundred gather at Ferndale",
     body: "About 300 believers came together at the YMCA Ferndale Complex in Shillong. That day a fellowship became a church. A week later it was named the Bible Believing Church.",
+    image: archive.congregation,
   },
   {
     year: "March 1992",
     title: "The first Bible Week",
     body: "Apostle Harry Das came to Shillong and taught on prayer, holiness, the tabernacle and the five-fold ministry. Many said they had never heard such teaching.",
+    image: archive.apostleDas,
   },
   {
     year: "1992",
     title: "Birthed in tears",
     body: "A season of testing followed and only 40 to 50 people remained, children included. They sat on the floor, then on mats, then on benches given by believers. Through months of prayer, God renewed their hope.",
     quote: "Stop crying, God has heard your cry. Rise up!",
+    image: archive.benches,
   },
   {
     year: "14 Mar 1993",
@@ -51,6 +55,7 @@ export const milestones: Milestone[] = [
     year: "Laban",
     title: "A home in Laban",
     body: "From a rented two-storey Assam-type house, God gave the church the land in Laban where Grace Covenant Church stands today.",
+    image: archive.pulpit,
   },
   {
     year: "2014",

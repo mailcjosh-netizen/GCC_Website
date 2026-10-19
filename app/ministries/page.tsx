@@ -11,7 +11,7 @@ export default function Ministries() {
       <Container className="space-y-16 py-16">
         {ministries.map((m, n) => (
           <section key={m.id} id={m.id} className={`grid scroll-mt-28 items-center gap-8 md:grid-cols-2 ${n % 2 ? "md:[&>img]:order-2" : ""}`}>
-            <img src={m.image} alt="" className="w-full rounded-lg" />
+            <img src={m.image} alt="" className="aspect-[4/3] w-full rounded-lg object-cover" />
             <div>
               <h2 className="font-display text-4xl text-pine">{m.title}</h2>
               <p className="mt-3 text-lg text-slate">{m.text}</p>

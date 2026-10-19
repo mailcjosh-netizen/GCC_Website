@@ -1,4 +1,4 @@
-import { ph } from "./placeholders";
+import { archive, stock } from "./placeholders";
 
 // Dummy data for the home page. Replace with real entries (or a CMS) later.
 export const slides = [
@@ -6,26 +6,26 @@ export const slides = [
     title: "You are welcome here",
     text: "Join us this Sunday in Laban, or watch online from wherever you are.",
     cta: { label: "Plan your visit", href: "/new-here" },
-    image: ph(1600, 900, "Sunday worship at GCC Laban"),
+    image: stock.liftedHands(1600, 900),
   },
   {
     title: "Annual convention",
     text: "Three days of worship, teaching and prayer. Dates to be announced.",
     cta: { label: "See events", href: "/events" },
-    image: ph(1600, 900, "Convention banner", "3E5C76"),
+    image: stock.worshipCrowd(1600, 900),
   },
   {
     title: "Stewardship parables",
     text: "A four-part series on living faithfully with what God has entrusted to us.",
     cta: { label: "Watch the series", href: "/sermons" },
-    image: ph(1600, 900, "Sermon series artwork", "0F2A21"),
+    image: stock.openBible(1600, 900),
   },
 ];
 
 export const sermons = [
-  { title: "Faithful with little", speaker: "Senior Pastor", date: "18 Oct 2026", image: ph(960, 540, "Latest sermon", "173A2E") },
-  { title: "The pattern on the mountain", speaker: "Guest speaker", date: "11 Oct 2026", image: ph(640, 360, "Sermon", "3E5C76") },
-  { title: "Timber for the temple", speaker: "Pastor", date: "4 Oct 2026", image: ph(640, 360, "Sermon", "2C5545") },
+  { title: "Faithful with little", speaker: "Senior Pastor", date: "18 Oct 2026", image: stock.worshipCrowd(960, 540) },
+  { title: "The pattern on the mountain", speaker: "Guest speaker", date: "11 Oct 2026", image: archive.pulpit },
+  { title: "Timber for the temple", speaker: "Pastor", date: "4 Oct 2026", image: stock.openBible(640, 360) },
 ];
 
 export const devotionals = [
@@ -35,17 +35,17 @@ export const devotionals = [
 ];
 
 export const events = [
-  { title: "Youth worship night", date: "Sat 24 Oct", time: "5:00 PM", action: "Know more", image: ph(640, 420, "Youth night", "3E5C76") },
-  { title: "Water baptism service", date: "Sun 1 Nov", time: "After worship", action: "Register", image: ph(640, 420, "Baptism", "173A2E") },
-  { title: "Women's prayer breakfast", date: "Sat 7 Nov", time: "8:00 AM", action: "Register", image: ph(640, 420, "Prayer breakfast", "2C5545") },
-  { title: "Christmas carol outreach", date: "Dec 2026", time: "Dates soon", action: "Know more", image: ph(640, 420, "Carol outreach", "0F2A21") },
+  { title: "Youth worship night", date: "Sat 24 Oct", time: "5:00 PM", action: "Know more", image: archive.youngMen },
+  { title: "Water baptism service", date: "Sun 1 Nov", time: "After worship", action: "Register", image: stock.shillongHills(640, 420) },
+  { title: "Women's prayer breakfast", date: "Sat 7 Nov", time: "8:00 AM", action: "Register", image: archive.benches },
+  { title: "Christmas carol outreach", date: "Dec 2026", time: "Dates soon", action: "Know more", image: archive.worshipLeader },
 ];
 
 export const testimonies = [
-  { title: "Healed through prayer", image: ph(480, 480, "Testimony", "3E5C76") },
-  { title: "A family restored", image: ph(480, 480, "Testimony", "173A2E") },
-  { title: "Found a church home", image: ph(480, 480, "Testimony", "2C5545") },
-  { title: "Called into missions", image: ph(480, 480, "Testimony", "0F2A21") },
+  { title: "Healed through prayer", image: archive.praiseDance },
+  { title: "A family restored", image: archive.groupPhoto },
+  { title: "Found a church home", image: stock.liftedHands(480, 480) },
+  { title: "Called into missions", image: stock.shillongHills(480, 480) },
 ];
 
 export const actionTiles = [
@@ -58,11 +58,11 @@ export const actionTiles = [
 ];
 
 export const ministries = [
-  { id: "children", title: "Children", text: "Sunday school where little ones learn to love Jesus.", image: ph(640, 480, "Children's ministry (consent needed)", "3E5C76") },
-  { id: "youth", title: "Youth", text: "A generation on fire, worshipping and serving together.", image: ph(640, 480, "Youth ministry", "173A2E") },
-  { id: "families", title: "Families", text: "Strengthening marriages and homes on God's Word.", image: ph(640, 480, "Families", "2C5545") },
-  { id: "cell-groups", title: "Cell groups", text: "Small groups meeting in homes across Shillong.", image: ph(640, 480, "Cell group", "0F2A21") },
-  { id: "women", title: "Women", text: "Prayer, fellowship and growing in faith together.", image: ph(640, 480, "Women's ministry", "3E5C76") },
-  { id: "men", title: "Men", text: "Men of faith, integrity and service.", image: ph(640, 480, "Men's ministry", "173A2E") },
-  { id: "missions", title: "Missions", text: "Carrying the Gospel to more than ten states and beyond.", image: ph(640, 480, "Missions", "2C5545") },
+  { id: "children", title: "Children", text: "Sunday school where little ones learn to love Jesus.", image: archive.congregation },
+  { id: "youth", title: "Youth", text: "A generation on fire, worshipping and serving together.", image: archive.youngMen },
+  { id: "families", title: "Families", text: "Strengthening marriages and homes on God's Word.", image: archive.groupPhoto },
+  { id: "cell-groups", title: "Cell groups", text: "Small groups meeting in homes across Shillong.", image: stock.openBible(640, 480) },
+  { id: "women", title: "Women", text: "Prayer, fellowship and growing in faith together.", image: archive.benches },
+  { id: "men", title: "Men", text: "Men of faith, integrity and service.", image: archive.pulpit },
+  { id: "missions", title: "Missions", text: "Carrying the Gospel to more than ten states and beyond.", image: stock.shillongHills(640, 480) },
 ];

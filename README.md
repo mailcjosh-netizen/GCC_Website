@@ -40,9 +40,10 @@ docs/           Content sources and notes
 
 Fonts: Cormorant Garamond (headings), Source Sans 3 (body), Noto Sans Devanagari (Hindi).
 
-## Swapping placeholder images
+## Swapping images
+All images are defined in `content/placeholders.ts`: `archive` (GCC photos from the 2018 book) and `stock` (Unsplash references, see `docs/image-credits.md`).
 1. Put approved photos in `public/images/`.
-2. In `content/placeholders.ts` or `content/home.ts`, replace `ph(...)` with `"/images/your-photo.jpg"`.
+2. Point the entry in `content/placeholders.ts` or `content/home.ts` to `"/images/your-photo.jpg"`.
 3. Photos of minors need parental consent on file first (Policy §10).
 
 ## Branches
