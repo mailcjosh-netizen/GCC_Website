@@ -1,8 +1,14 @@
 import type { NextConfig } from "next";
 
+// For GitHub Pages the site lives at /GCC_Website, so the deploy workflow sets
+// NEXT_PUBLIC_BASE_PATH=/GCC_Website. Locally it is empty and the site runs at "/".
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const nextConfig: NextConfig = {
-  // Placeholder images come from placehold.co via plain <img> tags.
-  // When real photos are added, switch to next/image and list the host here.
+  output: "export", // build a static site into /out (needed for GitHub Pages)
+  basePath,
+  trailingSlash: true,
+  images: { unoptimized: true },
   eslint: { ignoreDuringBuilds: true },
 };
 

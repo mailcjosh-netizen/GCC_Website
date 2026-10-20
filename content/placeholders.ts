@@ -24,16 +24,19 @@ export const stock = {
   shillongHills: (w = 1600, h?: number) => unsplash("photo-1665551896704-b0f439e7087d", w, h), // Abhishek Barooah, Shillong
 };
 
+// Prefix for files in /public when the site is served from a sub-folder (GitHub Pages).
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const archive = {
-  apostleDas: "/images/archive/apostle-harry-das.jpg",
-  pulpit: "/images/archive/early-01.jpg", // preaching in the Laban house
-  groupPhoto: "/images/archive/early-02.jpg", // early congregation group photo
-  congregation: "/images/archive/early-03.jpg", // full congregation with children
-  worshipLeader: "/images/archive/early-04.jpg", // worship with guitar
-  praiseDance: "/images/archive/early-05.jpg", // joyful praise in the hall
-  guitarSolo: "/images/archive/early-06.jpg", // special song at the cross
-  youngMen: "/images/archive/early-07.jpg", // young people in worship
-  benches: "/images/archive/early-08.jpg", // fellowship on the wooden benches
+  apostleDas: `${base}/images/archive/apostle-harry-das.jpg`,
+  pulpit: `${base}/images/archive/early-01.jpg`, // preaching in the Laban house
+  groupPhoto: `${base}/images/archive/early-02.jpg`, // early congregation group photo
+  congregation: `${base}/images/archive/early-03.jpg`, // full congregation with children
+  worshipLeader: `${base}/images/archive/early-04.jpg`, // worship with guitar
+  praiseDance: `${base}/images/archive/early-05.jpg`, // joyful praise in the hall
+  guitarSolo: `${base}/images/archive/early-06.jpg`, // special song at the cross
+  youngMen: `${base}/images/archive/early-07.jpg`, // young people in worship
+  benches: `${base}/images/archive/early-08.jpg`, // fellowship on the wooden benches
 };
 
 export const glimpses = [
