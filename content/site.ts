@@ -1,9 +1,10 @@
 export const site = {
   name: "Grace Covenant Church",
   short: "GCC Shillong",
-  address: "Grace Covenant Church, Laban, Shillong, Meghalaya 793004",
+  address: "Grace Covenant Church, Shillong, Meghalaya 793004",
   serviceTimes: [
-    { label: "Sunday worship", time: "10:00 AM" }, // TODO: confirm with church office
+    { label: "English Service", time: "Sunday, 10:00 AM" }, // TODO: confirm with church office
+    { label: "Khasi / Hindi Service", time: "Sunday, 12:00 PM" }, // TODO: confirm
     { label: "Mid-week Bible study", time: "Wednesday, 6:00 PM" }, // TODO: confirm
   ],
   vision:
@@ -11,7 +12,7 @@ export const site = {
   mission:
     "To produce and share Gospel-centred content in many languages and formats, so people can encounter Christ, grow spiritually, stay informed and stay connected with the GCC family wherever they are.",
   socials: [
-    { label: "YouTube", href: "#" },
+    { label: "YouTube", href: "https://www.youtube.com/@gracecovenantchurchshillong" },
     { label: "Facebook", href: "#" },
     { label: "Instagram", href: "#" },
     { label: "WhatsApp Channel", href: "#" },

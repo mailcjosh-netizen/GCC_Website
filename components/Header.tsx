@@ -8,18 +8,19 @@ function isGroup(n: NavItem | NavGroup): n is NavGroup {
 }
 
 function Logo() {
+  const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <Link href="/" className="flex items-center gap-3" aria-label="Grace Covenant Church, home">
-      {/* Placeholder mark: replace with the official GCC logo */}
-      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
-        <circle cx="20" cy="20" r="19" fill="#173A2E" />
-        <path d="M6 28 L14 19 L19 24 L26 14 L34 28 Z" fill="#6B8BA4" />
-        <rect x="19" y="7" width="2" height="12" fill="#C8A24A" />
-        <rect x="15.5" y="10" width="9" height="2" fill="#C8A24A" />
-      </svg>
+      <img
+        src={`${base}/images/logo.png`}
+        alt=""
+        width={44}
+        height={44}
+        className="h-11 w-11 object-contain"
+      />
       <span className="leading-tight">
         <span className="block font-display text-xl font-semibold text-pine">Grace Covenant Church</span>
-        <span className="block text-xs text-slate">Laban, Shillong</span>
+        <span className="block text-xs text-slate">Shillong, Meghalaya.</span>
       </span>
     </Link>
   );

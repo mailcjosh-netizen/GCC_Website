@@ -4,7 +4,7 @@ import { archive, stock } from "./placeholders";
 export const slides = [
   {
     title: "You are welcome here",
-    text: "Join us this Sunday in Laban, or watch online from wherever you are.",
+    text: "Join us this Sunday, or watch online from wherever you are.",
     cta: { label: "Plan your visit", href: "/new-here" },
     image: stock.liftedHands(1600, 900),
   },
